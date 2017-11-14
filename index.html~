@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JobSight</title>
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="shortcut icon" href="/myIcon.ico" type="image/x-icon">
+	<link rel="icon" href="/myIcon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="main-content">
+		<div class="header">
+			<div class="header-text">
+				<p class="header-title">JobSight</p>
+				<p class="header-subtitle">Discover Your Career</p>
+			</div>
+			<div class="header-search">
+				<form method="post" action="main.php">
+					<input type="text" name="job" placeholder="Job Title">
+					<input type="text" name="location" placeholder="Location">
+					<button type="submit" name="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="description">
+			<h1>Our Mission</h1>
+			<div class="flex-container">
+				<div class="flex-item">
+					<img src="Images/map-icon.ico">
+					<h4>Map Assisted Searches</h4>
+				</div>
+				<div class="flex-item">
+					<img src="Images/results-icon.png">
+					<h4>Get Results Fast</h4>
+				</div>
+				<div class="flex-item">
+					<img src="Images/user-friendly-icon.ico">
+					<h4>User Friendly Design</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

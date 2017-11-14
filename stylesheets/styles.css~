@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-image: url('../Images/header-background.jpg');
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    margin-top: 0px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.header-text {
+    margin: auto;
+}
+
+.header-title {
+    color: #3079ed;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: 13px;
+    cursor: default;
+}
+
+.header-subtitle {
+    margin-top: -35px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #8c8c8c;
+    letter-spacing: 5px;
+    cursor: default;
+}
+
+.header-search {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.header-search input[type=text] {
+    width: 20%;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+.header-search button {
+    margin-left: 20px;
+    width: 10%;
+    height: 38px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3079ed;
+    border-color: #fff;
+}
+
+.header-search input[type=text]:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.header-search button:focus {
+    outline: none;
+}
+
+.header-search button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color:#3079ed;
+    border-color: #3079ed;
+}
+
+.description {
+  width: 100%;
+  height: 500px;
+  padding-top: 50px;
+  background-color: #e6e6e6;
+  text-align: center;
+}
+
+.description h1 {
+  color: black;
+  letter-spacing: 3px;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  margin: 70px 0px 75px 0px;
+  width: 100%;
+  justify-content: center;
+  background-color: #e6e6e6;
+}
+
+.flex-item {
+  width: 33%;
+  height: 275px;
+  background-color: #e6e6e6;
+  color: black;
+  text-align: center;
+  word-wrap: normal;
+}
+
+.flex-item img {
+  width: 135px;
+  height: 135px;
+}

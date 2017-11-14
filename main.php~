@@ -1,0 +1,28 @@
+<?php
+
+$location = $_POST["location"];
+
+if (isset($location)) {
+	$conn = new mysqli("153.91.152.245", "candrews", "C$4920.project", "CS4920_CAndrews");
+
+	if ($conn->connect_error) {
+	  die("Connection failed: " . $conn->connect_error);
+	}
+
+	$stmt = $conn->prepare("SELECT name, address, city, state, zipcode, phone_number FROM employer WHERE city = ?");
+	$stmt->bind_param("s", $location);
+	$stmt->execute();
+	$name = 'empty?';
+	$stmt->bind_result($name, $address, $city, $state, $zipcode, $phone_number);
+
+	while($stmt->fetch()) {
+	  echo "Name: " . $name . " - Address: " . $address . " - City: " . $city . " - State: " . $state . " - Zipcode: " . $zipcode . " - Phone Number: " . $phone_number . "<br>";
+	}
+
+	$stmt->close();
+	$conn->close();
+}
+else {
+	echo "No search location entered!";
+}
+?>
